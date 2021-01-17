@@ -148,6 +148,11 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -158,6 +163,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    semantic-ui-sass (2.4.2.0)
+      sass (>= 3.2)
     semantic_range (2.3.1)
     spring (2.1.1)
     sprockets (4.0.2)
@@ -205,6 +212,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.1)
   sass-rails (>= 6)
+  semantic-ui-sass
   spring
   turbolinks (~> 5)
   tzinfo-data

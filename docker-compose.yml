@@ -8,7 +8,10 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./var/lib/mysql:/usr/local/var/mysql
+      # 初期データを投入するSQLが格納されているdir
+      - ./db/mysql_init:/docker-entrypoint-initdb.d
+      # 永続化するときにマウントするdir
+      - ./db/mysql_data:/var/lib/mysql
 
     #MySQL8.0からセキュリティが強化されたようで、--default-authentication-plugin=mysql_native_password を実行して認証方式を mysql_native_password へ変更する必要があり
     command: --default-authentication-plugin=mysql_native_password
