@@ -13,4 +13,6 @@
  *= require_self
  *= require_tree .
  */
-@import "semantic-ui";
+@import "admin-lte/dist/css/adminlte.min";
+
+@import "admin-lte/plugins/fontawesome-free/css/all.min.css";
